@@ -1,5 +1,5 @@
 %define upstream_name	 Test-MockModule
-%define upstream_version 0.170.0
+%define upstream_version 0.177.0
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -14,6 +14,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/G/GF/GFRANKS/Test-MockModule-v%{
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(SUPER)
+BuildRequires:	perl{Test-Warnings)
 BuildArch:	noarch
 
 %description
