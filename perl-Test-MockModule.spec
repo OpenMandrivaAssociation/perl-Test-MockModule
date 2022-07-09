@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
@@ -14,7 +14,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/G/GF/GFRANKS/Test-MockModule-v%{
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(SUPER)
-BuildRequires:	perl{Test-Warnings)
+BuildRequires:	perl(Test::Warnings)
 BuildArch:	noarch
 
 %description
