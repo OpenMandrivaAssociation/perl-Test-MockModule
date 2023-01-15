@@ -1,15 +1,14 @@
 %define upstream_name	 Test-MockModule
-%define upstream_version 0.177.0
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	0.177.0
 Release:	1
 
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Test::MockModule
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GF/GFRANKS/Test-MockModule-v%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GF/GFRANKS/Test-MockModule-v%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
@@ -22,10 +21,10 @@ Test::MockModule is a Perl module that lets you temporarily redefine
 subroutines in other packages for the purposes of unit testing.
 
 %prep
-%setup -q -n %{upstream_name}-v%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-v%{version}
+perl Build.PL installdirs=vendor
 
 %build
-perl Build.PL installdirs=vendor
 ./Build
 
 %check
