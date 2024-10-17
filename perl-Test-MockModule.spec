@@ -7,7 +7,7 @@ Release:	1
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Test::MockModule
+Url:		https://metacpan.org/pod/Test::MockModule
 Source0:	http://search.cpan.org/CPAN/authors/id/G/GF/GFRANKS/Test-MockModule-v%{version}.tar.gz
 
 BuildRequires:	perl-devel
