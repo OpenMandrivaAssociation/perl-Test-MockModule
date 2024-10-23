@@ -2,7 +2,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.177.0
-Release:	1
+Release:	2
 
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
