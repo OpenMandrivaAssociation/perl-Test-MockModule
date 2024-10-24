@@ -1,8 +1,8 @@
 %define upstream_name	 Test-MockModule
 
 Name:		perl-%{upstream_name}
-Version:	0.177.0
-Release:	2
+Version:	0.179.0
+Release:	1
 
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
