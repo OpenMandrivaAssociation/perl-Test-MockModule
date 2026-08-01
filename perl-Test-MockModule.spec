@@ -1,15 +1,16 @@
 %define upstream_name	 Test-MockModule
-%define upstream_version v0.185.3
+%define upstream_version 0.185.3
 
 Name:		perl-%{upstream_name}
 Version:	0.185.3
-Release:	2
+Release:	3
 
 Summary:	Override subroutines in a module for unit testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Test::MockModule
 Source0:	https://cpan.metacpan.org/authors/id/G/GF/GFRANKS/Test-MockModule-v0.185.3.tar.gz
+BuildRequires:	make
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
